@@ -1,0 +1,628 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stratus</title>
+    <link rel="icon" type="image/x-icon" href="logo-icon.png">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Font Awesome CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+
+    <!-- Bootstrap Icons CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+    <!-- Custom CSS -->
+    <link href="style.css" rel="stylesheet">
+</head>
+
+<body>
+      <nav id="navbar" class="navbar navbar-expand-lg p-3 py-lg-2 bg-light navbar-transparent">
+        <!-- Container wrapper -->
+        <div class="container">
+          <a class="navbar-brand text mb-1"> <img src="./images/logo.png" alt="Stratus Logo" class="logo-image" /></a>
+      
+          <!-- Toggle button -->
+           <button class="navbar-toggler" type="button" onclick="toggleCollapse()">
+            <span class="fa fa-bars"></span>
+          </button>
+      
+          <!-- Collapsible wrapper -->
+          <div id="navbarCollapse" class="collapse navbar-collapse">
+            <!-- Left links -->
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0 " style="margin-top: 8px; font-size: larger;">
+              <li class="nav-item">
+                <a class="nav-link" style="color: #274D7C;" href="#home">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" style="color: #274D7C;" href="#about">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" style="color: #274D7C;" href="#Treatments">Treatment</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" style="color: #274D7C;" href="#services">Services</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" style="color: #274D7C;" href="#contact">Contact</a>
+              </li>
+            </ul>
+            <!-- Left links -->
+      
+           <div class="h-100 d-inline-flex align-items-center">
+              <a class="btn btn-sm-square bg-white  me-1" href="" style="color: #274D7C;"><i class="fab fa-facebook-f"></i></a>
+              <a class="btn btn-sm-square bg-white  me-1" href="" style="color: #274D7C;"><i class="fab fa-youtube"></i></a>
+              <a class="btn btn-sm-square bg-white  me-1" href="" style="color: #274D7C;"><i class="fab fa-linkedin-in"></i></a>
+              <a class="btn btn-sm-square bg-white  me-0" href="" style="color: #274D7C;"><i class="fab fa-instagram"></i></a>
+            </div>
+             
+          </div>
+          <!-- Collapsible wrapper -->
+        </div>
+        <!-- Container wrapper -->
+      </nav>
+      <!-- Navbar -->
+
+      <!--header-end-->
+      <section id="hero">
+        <div id="heroCarousel" data-bs-interval="5000" class="carousel slide carousel-fade" data-bs-ride="carousel">
+    
+          <ol class="carousel-indicators" id="hero-carousel-indicators"></ol>
+    
+          <div class="carousel-inner" role="listbox">
+    
+            <!-- Slide 1 -->
+            <div class="carousel-item active" style="background-image: url(images/slider/bridge.jpg)">
+              <div class="carousel-container">
+                <div class="container">
+                  <h1 class="animate__animated animate__fadeInDown">Welcome to <span>Stratus</span></h1>
+                  <h2 class="animate__animated animate__fadeInUp">Dive into a world of clean water with us!</h2>
+
+                </div>
+              </div>
+            </div>
+    
+            <!-- Slide 2 -->
+            <div class="carousel-item" style="background-image: url(./images/slider/pollution.jpg)">
+              <div class="carousel-container">
+                <div class="container">
+                  <h2 class="animate__animated animate__fadeInDown">Come on in, the waters clean</h2>
+                </div>
+              </div>
+            </div>
+    
+            <!-- Slide 3 -->
+            <div class="carousel-item" style="background-image: url(./images/slider/sea.jpg)">
+              <div class="carousel-container">
+                <div class="container">
+                  <h2 class="animate__animated animate__fadeInDown">Your wastewater solution is just a click away!</h2>
+                </div>
+              </div>
+            </div>
+            <!-- Slide 4 -->
+            <div class="carousel-item" style="background-image: url(./images/slider/Wastewater.webp)">
+              <div class="carousel-container">
+                <div class="container">
+                  <h2 class="animate__animated animate__fadeInDown">Let us turn your wastewater into a resource</h2>
+                  <h4 class="animate__animated animate__fadeInUp">Don't let wastewater bring you down - we've got you covered!</h4>
+                </div>
+              </div>
+            </div>
+    
+          </div>
+    
+          <a class="carousel-control-prev" href="#heroCarousel" role="button" data-bs-slide="prev" style="text-decoration: none;">
+            <span class="carousel-control-prev-icon bi bi-chevron-left" aria-hidden="true"></span>
+          </a>
+    
+          <a class="carousel-control-next" href="#heroCarousel" role="button" data-bs-slide="next" style="text-decoration: none;">
+            <span class="carousel-control-next-icon bi bi-chevron-right" aria-hidden="true"></span>
+          </a>
+    
+        </div>
+      </section>
+<!-- End Hero -->
+
+
+<!--AboutUs-->
+<section  id="animated-section" class="animate-section">
+  <br>
+    <div id="about" class="container-xxl py-5">
+      <div class="container">
+        <div class="row g-5">
+          <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
+            <h1 class="text-uppercase" style="font-weight: bold;">About Us</h1>
+            <h1 class="mb-4"> </h1>
+            <p class="mb-4">At <span class="text-highlight">Stratus</span>, We provide innovative and practical solutions for wastewater treatment. With growing populations and increasing urbanization, the proper management of wastewater has become crucial for both public health and environmental sustainability. At our company, we offer a range of wastewater treatment solutions that are designed to meet the diverse needs of various industries and communities. From conventional treatment methods to cutting-edge technologies, we are committed to providing effective, reliable, and cost-efficient solutions that help our clients meet regulatory requirements while minimizing their environmental footprint. Explore our website to learn more about our comprehensive range of wastewater solutions and how we can help you achieve your treatment goals.</p>
+          </div>
+          <div class="col-lg-6">
+            <div class="about-content">
+              <div class="about-image">
+                <img src="images/about.webp" alt="" style="border-radius: 15px;">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!--Treatments-->
+  <section >
+        <div id="Treatments" class="container-xxl py-5">
+          <div id="animated-section" class="animate-section">
+        <h1 style="text-align:center ;color:#274D7C;">Our Treatments</h1><br>
+        <div style="text-align: center;"><h5>At <span class="text-highlight"><b>Stratus</b></span>, we understand that the need for wastewater treatment is urgent and affects all aspects of 
+            human life, from the water we drink to the food we eat. That's why our mission is to make a positive 
+            impact on the world by providing affordable, state-of-the-art wastewater treatment solutions.</h5>
+          </div>
+        
+      </div>
+    </div>
+
+           <section  id="animated-section" class="animate-section">
+            <div id="animated-section" class="animate-section" class="container-xxl py-5">
+               <div class="container">
+                <div class="row g-5">
+                  <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <h2 style=" color: #274D7C; " > BIOLOGICAL TREATMENT</h2><br><br>
+                    <h5>The CAS technology is a common wastewater treatment process that uses a combination of aerobic 
+                        bacteria and aeration to break down organic mater in wastewater. The process involves introducing 
+                        air into a mixed liquor containing wastewater and microorganisms, which consumes and removes 
+                        organic pollutants and relies on sludge recirculation to maintain the treatment process.</h5><br>
+                        <button class="d-btn">Download Full Catalog</button>
+                  </div>
+                  <div class="col-lg-6">
+                    <div class="about-content">
+                      <div class="about-image">
+                        <img class="treatment-img" src="images/treatments/biological/Conventional-Activated-Sludge.jpg" alt="">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <br><br><br><br><br>
+                <div id="animated-section" class="animate-section" class="container">
+                    <div class="row g-5">
+                      <div class="col-lg-6">
+                        <div class="about-content">
+                          <div class="about-image">
+                            <img class="treatment-img " src="images/treatments/biological/Sequencing-batch-reactor.jpg" alt="">
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
+                  
+                        <h2 style=" color: #274D7C;">Sequencing batch reactor (SBR)</h2><br>
+                        <h5>The SBR technology is a type of wastewater treatment process that uses a single reactor to perform 
+                            several treatment steps in a timed sequence. SBRs can be used for a range of wastewater treatment 
+                            applications, including biological nutrient removal and disinfection.</h5><br>
+                        <button class="d-btn">Download Full Catalog</button>
+                      </div>
+                    </div>
+                  </div>
+                  <br><br><br><br><br>
+                  <div id="animated-section" class="animate-section" class="container">
+                    <div class="row g-5">
+                      <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
+      
+                        <h2 style="color: #274D7C;" >Rotating Biological Contactor (RBC)</h2><br>
+                        <h5>The RBC treatment process involves pumping wastewater onto rotating disks covered with 
+                            microorganisms, which form a biofilm on the disks. As the disks rotate, the microorganisms break 
+                            down and treat the wastewater as it flows over the disks. The treated wastewater is then collected 
+                            and discharged, while excess biomass is sloughed off the disks and collected for further treatment or 
+                            disposal. The RBC process is known for its simplicity and low maintenance requirements, and its ability 
+                            to handle variations in flow rate and organic loading.</h5><br>
+                            <button class="d-btn">Download Full Catalog</button>
+                      </div>
+                      <div class="col-lg-6">
+                        <div class="about-content">
+                          <div class="about-image">
+                            <img class="treatment-img" src="images/treatments/biological/Rotating-Biological-Contactor.jpg" alt="">
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <br><br><br><br><br>
+                    <div id="animated-section" class="animate-section" class="container">
+                        <div class="row g-5">
+                          <div class="col-lg-6">
+                            <div class="about-content">
+                              <div class="about-image">
+                                <img class="treatment-img " src="images/treatments/biological/Moving-Bed-Biofilm-Reactor.jpg" alt="">
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
+                      
+                            <h2 style=" color: #274D7C;">Moving Bed Biofilm Reactor (MBBR)</h2><br>
+                            <h5>The MBBR system uses plastic media with a large surface area to support the growth of 
+                                microorganisms. The microorganisms atached to the media break down and treat the wastewater as 
+                                it flows through the reactor. The MBBR process is known for its high treatment efficiency, compact 
+                                design, and low maintenance requirements. </h5><br>
+                            <button class="d-btn">Download Full Catalog</button>
+                          </div>
+                        </div>
+                      </div>
+                      <br><br><br><br><br>
+              </div>
+            </div>
+        </section>
+           <section>
+            <div id="animated-section" class="animate-section" class="container-xxl py-5">
+              <div class="container">
+             <h2 style="color: #274D7C; text-align: center;" > SLUDGE TREATMENT</h2><br><br>
+             <div style="text-align: center;"><h5 style="text-align: justify;">Sludge is the byproduct of wastewater treatment that consists of a mixture of solids and water. 
+                Compared to effluent, sludge contains a significantly higher proportion of solids and thus necessitates 
+                specialized treatment processes. If not treated properly, it can result in exceeding discharge limits and 
+                potentially result in severe penalties, legal action or system failure. Therefore, managing and treating 
+                sludge requires special atention to ensure its safe and effective disposal.
+                Wastewater sludge treatment typically involves several stages to reduce the volume and convert the 
+                sludge into a safe and manageable material</div>
+            </h5>
+          </div>
+            </div><br><br><br>
+            <section id="animated-section" class="animate-section">
+                <section id="s-treatment" class="s-treatment">
+                      <div class="container">
+                        <div class="row">
+                          <div class="col-md-6  bg-light">
+                            <div class="icon-box">
+                              <i><img src="images/treatments/sludge/thickness.png"></i>
+                              <h4><a href="#">Thickening</a></h4>
+                              <p>This stage involves concentrating the sludge by removing water to reduce its volume for further treatment.</p>
+                               <button class="d-btn">Download Full Catalog</button>
+                            </div>
+                          </div>
+                          <div class="col-md-6 mt-4 mt-md-0 bg-light">
+                            <div class="icon-box">
+                              <i><img src="images/treatments/sludge/stability.png"></i>
+                              <h4><a href="#">Stabilization</a></h4>
+                              <p>The objective of this stage is to reduce the number of pathogens and reduce the amount of organic matter in the sludge.</p>
+                              <button class="d-btn">Download Full Catalog</button>
+                            </div>
+                          </div>
+                          <div class="col-md-6 mt-4 mt-md-0 bg-light">
+                            <div class="icon-box">
+                              <i><img src="images/treatments/sludge/dewatering.png"></i>
+                              <h4><a href="#">Dewatering</a></h4>
+                              <p>This stage involves further removing water from the sludge to produce a solid cake that can be easily handled and transported.</p>
+                               <button class="d-btn">Download Full Catalog</button>
+                            </div>
+                          </div>
+                          <div class="col-md-6 mt-4 mt-md-0 bg-light">
+                            <div class="icon-box">
+                              <i><img src="images/treatments/sludge/dry.png" ></i>
+                              <h4><a href="#">Drying</a></h4>
+                              <p style="  line-height: 16px;
+                              ">This stage further reduces the moisture content of the sludge to create a dry, solid material that can be safely stored or used as a fuel source. There are several methods of drying sludge, including solar drying, thermal drying, and mechanical drying.</p>
+                              <button class="d-btn" style="height: 33%;">Download Full Catalog</button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                 </section></section><br>
+        <section  id="animated-section" class="animate-section">
+            <div class="container-xxl py-5">
+              <div class="container">             
+                 <h2 style="font-weight: bold; color: #274D7C;" > Fat, Oil, & Grease Treatment</h2>
+                  <div class="row g-5">
+                    <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
+                      <h5 id="animated-section" class="animate-section" style="margin-top: 50px;">Fat, Oil, and Grease (FOG) treatment is an essential process for managing the wastewater generated 
+                          by food service establishments and other industries that produce significant amounts of FOG. The 
+                          treatment process typically involves removing FOG from wastewater through a combination of 
+                          mechanical separation and chemical treatment. The importance of FOG treatment lies in preventing 
+                          blockages in sewer lines and wastewater treatment systems, which can lead to overflows, backups, 
+                          and environmental pollution. Proper FOG treatment not only helps to protect the environment but 
+                          also ensures compliance with local regulations and reduces the risk of costly fines and penalties. </h5>                    
+                    </div>
+                    <div class="col-lg-6">
+                      <div class="about-content">
+                        <div class="about-image">
+                          <img id="animated-section" class="treatment-img" src="images/treatments/oil/transparent-plastic-bottles-filled-with-yellow-substance.jpg" alt="">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+               </div>
+             </div>
+            </div>
+      </section>
+            <br><br><br><br><br>
+             <div id="animated-section" class="animate-section">
+              <div class="container">
+            <h2 style="font-weight: bold; color: #274D7C; ">Methods for FOG treatment include</h2><br>
+               <h5>
+                <ol>
+                 <li id="animated-section" class="animate-section"> Grease traps: mechanical separators that capture FOG from wastewater</li>
+                <li id="animated-section" class="animate-section"> Grease interceptors: larger versions of grease traps that can handle higher volumes of wastewater</li>
+               <li id="animated-section" class="animate-section">  Biological treatment: using microorganisms to break down FOG</li>
+                <li id="animated-section" class="animate-section"> Chemical treatment: adding chemicals to wastewater to break down FOG</li>
+               <li id="animated-section" class="animate-section">  Membrane filtration: using membranes to physically separate FOG from wastewater</li>
+                <li id="animated-section" class="animate-section"> Coagulation-flocculation: adding chemicals to wastewater to form larger FOG particles that can be 
+                more easily removed.</li>
+                <li id="animated-section" class="animate-section"> Adsorption: passing wastewater through a bed of clay particles or activated carbon to trap FOG 
+                molecules, or allowing FOG molecules to adhere to the surface of clay particles.</li> 
+                <ol></h5></div></div></section>
+  </section>
+<!--treatments-end-->
+<br><br><br>
+
+<!--Services-start-->
+<div class="container">
+<section id="services">
+<h1 id="animated-section" class="animate-section" class="mb-5"style="text-align:center; font-weight: bold; color: #274D7C;">Our Services</h1><br>
+<div class="row row-cols-1 row-cols-md-3 g-4">
+    <div id="animated-section" class="animate-section" class="col">
+      <div class="card h-100 d-flex">
+        <img  src="./images/design1.jpg" class="card-img-top" alt="...">
+        <div class="card-body ">
+          <h2 class="card-title" style="color: #274D7C;" >Design</h2>
+          <p class="card-text">We provide detailed plans and specifications for the construction or modification of wastewater treatment plants.</p>
+        </div>
+        
+      </div>
+    </div>
+    <div id="animated-section" class="animate-section" class="col">
+      <div class="card h-100 d-flex">
+        <img src="./images/R.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h2 style="color: #274D7C;" class="card-title">Procurement</h2>
+          <p class="card-text">We handle the process of acquiring necessary equipment, materials, and supplies for the construction or modification of wastewater treatment plants.</p>
+        </div>
+      </div>
+    </div>
+    <div id="animated-section" class="animate-section" class="col">
+      <div class="card h-100 d-flex">
+        <img src="./images/r2.webp" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h2 style="color: #274D7C;" class="card-title">Installation</h2>
+          <p class="card-text">We undergo installation of equipment and materials for wastewater treatment plants according to the design plans.</p>
+        </div>
+      </div>
+    </div>
+  </div><br><br><br>
+<div class="row row-cols-1 row-cols-md-3 g-4">
+    <div id="animated-section" class="animate-section" class="col">
+      <div class="card h-100 d-flex">
+        <img style="height: 280px;" src="./images/r3.jpg" class="card-img-top" alt="...">
+        <div class="card-body ">
+          <h3 class="card-title" style="color: #274D7C;" >Testing and Commissioning</h3>
+          <p class="card-text">We verify the proper installation and functioning of wastewater treatment plant equipment and systems, followed by commissioning for operational use.</p>
+        </div>
+        
+      </div>
+    </div>
+    <div class="col">
+      <div class="card h-100 d-flex">
+      <div id="animated-section" class="animate-section"class="card h-60">
+        <img src="./images/r4.jpg" class="card-img-top" alt="..." >
+        <div class="card-body">
+          <h3 style="color: #274D7C;" class="card-title">Operation & Maintenance</h3>
+          <p class="card-text">We aid with the ongoing management and upkeep of wastewater treatment plants to ensure proper functioning and compliance with regulations.</p>
+        </div>
+      </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card h-100 d-flex">
+        <img id="animated-section" class="animate-section" src="./images/OIP.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h2 style="color: #274D7C;" class="card-title">Training</h2>
+          <p class="card-text">We can provide training and education to wastewater treatment plant staff on proper operation and maintenance procedures.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+</div>
+  <!--Services-end-->
+  <br><br><br><br><br>
+
+  <!--contact-start-->
+  <section id="contact" class="contact">
+    <div class="container">
+
+      <div class="row mt-5">
+        <div class="col-lg-4">
+          <h2 style="color: #274D7C; float:left;">Contact Us</h2>
+            <div class="info">
+            <div  id="animated-section" class="animate-section" style="margin-top: 100px;">
+              <div class="address">
+                <i class="bi bi-geo-alt"></i>
+                <h4>Address:</h4>
+                <p>Beirut, Lebanon</p>
+              </div>
+            </div>
+            <div  id="animated-section" class="animate-section">
+              <div class="email">
+                <i class="bi bi-envelope"></i>
+                <h4>Email:</h4>
+                <p><a href="mailto:info@stratusenvironment.com">info@stratusenvironment.com</a></p>
+              </div>
+            </div>
+            <div  id="animated-section" class="animate-section">
+              <div class="phone">
+                <i class="bi bi-phone"></i>
+                <h4>Call:</h4>
+                <p><a href="tel:+96171816871">+961 71 81 68 71</a></p>
+              </div>
+           </div>
+              <br><br>
+            <div  id="animated-section" class="animate-section">
+              <div class="hours">
+                <i class="bi bi-hourglass"></i>
+                <h4>Hours (EET/EEST):</h4>
+                <p>MONDAY - FRIDAY / 9 AM - 5 PM</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="col-lg-8 mt-5 mt-lg-0" id="animated-section" class="animate-section">
+
+          <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+            <h2 style="color: #ffffff; margin-bottom: 30px; text-align: center; ">Let’s Find a Solution</h2>
+
+            <div class="row ">
+              <div class="col-11">
+                <label for="exampleFormControlTextarea1" class="form-label">Field</label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="1"></textarea>
+              </div>
+            </div>
+            <br>
+            <div class="row">
+              <div class="col-4">
+                <label for="exampleFormControlInput1" class="form-label">Name*</label>
+                <input type="text" aria-label="Name" class="form-control" required>
+              </div>
+              <div class="col-7">
+                <label for="exampleFormControlInput1" class="form-label">Email address*</label>
+                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com" required>
+              </div>
+            </div>
+            <br>
+            <div class="row">
+              <div class="col-4">
+                <label for="exampleFormControlInput1" class="form-label">Company (if applicable)</label>
+                <input type="text" class="form-control">
+              </div>
+              <div class="col-7">
+                <label for="inputPhone" class="form-label">Phone Number*</label>
+                <input type="tel" class="form-control" id="inputPhone" placeholder="+961 71 81 68 71" required>
+              </div>
+            </div>
+            <br>
+            <div class="row">
+              <div class="dropdown col-4">
+                <br>
+                <select id="projectType" class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  <option value="Residential">Residential</option>
+                  <option value="Municipal">Municipal</option>
+                  <option value="Industrial">Industrial</option>
+                  <option value="Mixed">Mixed</option>
+                  <option value="Other">Other</option>
+                </select>
+                <input type="text" id="otherProjectType" class="form-control" style="display: none; width: 60%;" placeholder="Enter project type">
+              </div>
+        
+              <div class="col-7"><br>
+                <label for="exampleFormControlInput1" class="form-label">Population Equivalent (P.E.) or Wastewater Flow 
+                  (m3/d)</label>
+                <input type="number" class="form-control" required>
+              </div>
+            </div>
+            <div class="row">
+              <div class="dropdown col-4">
+                <br>
+                <select id="projectType" class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  <option value="Secondary">Secondary</option>
+                  <option value="Tertiary">Tertiary</option>
+                  <option value="Other">Other</option>
+                </select>
+                <input type="text" id="otherProjectType" class="form-control" style="display: none; width: 60%;" placeholder="Enter project type">
+              </div>
+              <div class="col-4">
+                <br>
+                <label for="exampleFormControlInput1" class="form-label">Additional Information</label>
+              </div>
+            </div>
+            <br>
+            <div class="row justify-content-center">
+              <div class="col-6">
+                <div class="mb-3 text-center">
+                  <label for="upload"><h5>Wastewater Sampling Results </h5>(if available)</label>
+                  <button class="btn btn-light me-md-2" type="button"><input type="file" class="form-control-1" id="upload"></button>
+                </div>
+              </div>
+            </div>
+          </form>
+
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!--contact-end-->
+<br><br><br>
+  <!-- Footer -->
+  <div class="container" style="background-color: #274D7C; width: 100%;
+  max-width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;">
+  <footer class="text-light">
+
+    <section class="row mt-3 ">
+      <div class="col-3">
+        <img src="./images/footer.png" alt="Stratus Logo" class="logo-image mr-2" style="width: 220px;">
+      </div>
+      <div class="col-5 mt-5">
+        <p>We offer all-inclusive wastewater treatment services with emphasis on low operation cost and a low carbon footprint. Feel free to email us your inquiry, and our team will be happy to assist you in selecting the optimal solution that meets your requirements.</p>
+      </div>
+      <div class="col-4 mt-3" style="text-align: right;">
+        <div>
+          <ul style="list-style: none; padding: 0; text-align: left; margin-left: 100px; margin-top: 20px;">
+            <li>
+              <a href="" class="me-4 link-light" style="color:white;">
+                <i class="fab fa-facebook-f"></i>
+                <span style="margin-left: 8px;">Facebook</span>
+              </a>
+            </li>
+            <li>
+              <a href="" class="me-4 link-light" style="color:white;">
+                <i class="fab fa-instagram"></i>
+                <span style="margin-left: 8px;">Instagram</span>
+              </a>
+            </li>
+            <li>
+              <a href="" class="me-4 link-light" style="color:white;">
+                <i class="fab fa-linkedin"></i>
+                <span style="margin-left: 8px;">LinkedIn</span>
+              </a>
+            </li>
+            <li>
+              <a class="me-4 link-light" href="">
+                <i class="fab fa-youtube"></i>
+                <span style="margin-left: 8px;">YouTube</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  
+    <!-- Copyright -->
+    <div class="row" >
+      <div class="col-5 m-lg-5">
+        &copy; 2023 Copyright:
+        <a class="text-reset fw-bold" href="https://mdbootstrap.com/">STRATUS.com</a>
+      </div>
+      <div class="col-5" style="text-align: right; margin-top: 40px; margin-left: 70px;">
+        <h5>Designed By <a href="https://egv.com.lb/#Home" style="text-decoration: none; color: #ffffff;"><img src="egv_logo.png" style="width: 80px;" alt="logo"></a></h5>
+      </div>
+    </div>
+    <!-- Copyright -->
+  </footer>
+  </div>
+<!--footer-end-->
+
+     
+      <script>
+        AOS.init();
+      </script>
+      <script src="Stratus.js"></script>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+</body>
+</html>
